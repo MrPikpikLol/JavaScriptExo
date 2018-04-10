@@ -3,12 +3,11 @@ setInterval(function (){
   var hours = currentTime.getHours();
   var minutes = currentTime.getMinutes();
   var seconds = currentTime.getSeconds();
-  var period = "AM";
-  if  (hours >= 12) {
-    period = "PM";
+
+  if  (hours >= 24) {
   }
-  if (hours > 12) {
-    hours = hours - 12;
+  if (hours > 24) {
+  hours - 24;
   }
   if (seconds < 10) {
     seconds = "0" + seconds;
@@ -16,7 +15,7 @@ setInterval(function (){
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
-  var clockTime = hours + ":" + minutes + ":" + seconds + " " + period;
+  var clockTime = hours + ":" + minutes + ":" + seconds;
 
   var clock = document.getElementById('clock');
   clock.innerText = clockTime;
