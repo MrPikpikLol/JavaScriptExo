@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Dashboard made with JS" />
+    <meta name="viewport" content="width=content-width, initial-scale=1" />
+    <title>Mon Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<div class="container">
+<!-- Start Clock -->
+  <div class="row">
+    <div class="clock">
+      <div id="banner"><span>Heure</span></div>
+      <div id="clock"></div>
+    </div>
+  </div>
+</div>
+<!-- End Clock -->
+<!---------------------------------------->
+<!-- Start TodoList -->
+<div class="container">
+  <div class="row">
+    <div class="todo col-md-6">
+    <div id="wrapper">
+      <h1> Choses à faire</h1>
+      <input id="task" /><button id="add">Ajouter</button>
+      <!-- <hr> -->
+      <div id="todos"></div>
+    </div>
+    </div>
+<!-- End TodoList -->
+<!---------------------------------------->
+<!-- Start Calculator -->
+    <div class="casio col-md-6">
+    <h1>Calculatrice</h1>
+      <br/>
+      <form id="myform" Name="calc">
+        <input class="ScreenC" name="display"/><br/>
+        <input class="btnC" type="button" value="0" OnClick="calc.display.value+='0'"/>
+        <input class="btnC" type="button" value="1" OnClick="calc.display.value+='1'"/>
+        <input class="btnC" type="button" value="2" OnClick="calc.display.value+='2'"/>
+        <input class="btnC" type="button" value="+" OnClick="calc.display.value+='+'"/> <br/>
+        <input class="btnC" type="button" value="3" OnClick="calc.display.value+='3'"/>
+        <input class="btnC" type="button" value="4" OnClick="calc.display.value+='4'"/>
+        <input class="btnC" type="button" value="5" OnClick="calc.display.value+='5'"/>
+        <input class="btnC" type="button" value="-" OnClick="calc.display.value+='-'"/> <br/>
+        <input class="btnC" type="button" value="6" OnClick="calc.display.value+='6'"/>
+        <input class="btnC" type="button" value="7" OnClick="calc.display.value+='7'"/>
+        <input class="btnC" type="button" value="8" OnClick="calc.display.value+='8'"/>
+        <input class="btnC" type="button" value="x" OnClick="calc.display.value+='*'"/> <br/>
+        <input class="btnC" type="button" value="9" OnClick="calc.display.value+='9'"/>
+        <input class="btnC" type="button" value="C" OnClick="calc.display.value=''"/>
+        <input class="btnC" type="button" value="=" OnClick="calc.display.value=eval(calc.display.value)"/>
+        <input class="btnC" type="button" value="&#247;" OnClick="calc.display.value+='/'"/>
+      </form>
+    </div>
+    </div>
+  </div>
+<!-- End Calculator -->
+<!---------------------------------------->
+<!-- Start WordCountTool -->
+<div class="container">
+  <div class="row">
+    <div class=" wordcount col-md-6">
+    <h1> Ecris quelque chose... </h1>
+    <input id="str" value="" type="text" />
+    <div id="output"></div>
+    <button id="btn"><h2>Combien de lettres?</h2></button>
+    </div>
+<!-- End WordCountTool -->
+<!---------------------------------------->
+<!-- Start MathAdditionApp -->
+    <div class="col-md-6">
+    <div id="wrapper">
+      <h1>Combien font?</h1>
+      <table align="center">
+        <tr>
+          <td>
+            <div id="number1">1</div>
+          </td>
+          <td>
+            <div>+</div>
+          </td>
+          <td>
+            <div id="number2">2</div>
+          </td>
+          <td>
+            <div>=</div>
+          </td>
+          <td>
+            <input type="text"></input>
+          </td>
+          <td>
+            <input id="btns" type="button" value="check"></input>
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- End MathAdditionApp -->
+<!---------------------------------------->
+<!-- Start ImageSlider -->
+<div class="container">
+  <div class="row">
+    <h1 class="wrapper"> Mes Photos</h1>
+    </br>
+    </br>
+      <div class="wrapper" style="max-width:1000px;position:relative">
+        <img class="mySlides" src="img/1.jpg" style="width:75%" />
+        <img class="mySlides" src="img/2.jpg" style="width:75%" />
+        <img class="mySlides" src="img/3.jpg" style="width:75%" />
+        <img class="mySlides" src="img/4.jpg" style="width:75%" />
+        <img class="mySlides" src="img/5.jpg" style="width:75%" />
+        <img class="mySlides" src="img/6.jpg" style="width:75%" />
+        <img class="mySlides" src="img/7.jpg" style="width:75%" />
+        <a class="btn1" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><span id="btnl">&lt;</span></a>
+        <a class="btn2" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><span id="btnr">&gt;</span></a>
+      </div>
+  </div>
+</div>
+<!-- End ImageSlider -->
+<!---------------------------------------->
+<!-- Start ContactForm -->
+<div class="container">
+  <div class="contact row">
+    <form id="cf" method="post" action="" >
+      <h1>Contactez moi</h1>
+      <fieldset>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" class= "stored" />
+        <label for="mail">Email</label>
+        <input type="email" id="email" name="email" class= "stored" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" class= "stored"></textarea>
+      </fieldset>
+      <button type="submit">Envoyer</button>
+      <input id ="clear" type="reset" />
+    </form>
+  </div>
+</div>
+<!-- End ContactForm -->
+<!---------------------------------------->
+<!-- Start Script -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+<!-- End Script -->
+  </body>
+</html>

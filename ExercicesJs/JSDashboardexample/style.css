@@ -1,0 +1,46 @@
+* {
+  margin: auto;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: rgb(205, 125, 50);
+}
+h1 {
+  text-align: center;
+}
+.row {
+  margin-top: 50px;
+}
+.clock {
+  text-align: center;
+  font-size: 50px;
+}
+.todo {
+  text-align: center;
+}
+.casio {
+  text-align: center;
+}
+.ScreenC {
+  background-color: rgb(236, 212, 150);
+  text-align: right;
+  font-size: 25px;
+  color: #000;
+  height: 50px;
+}
+.btnC {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(236, 212, 150);
+  color: #000;
+  border-style: none;
+}
+.wordcount {
+  text-align: center;
+}
+.contact {
+  text-align: center;
+}
