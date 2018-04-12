@@ -124,7 +124,6 @@ btns.onclick = function () {
   answer = number1 + number2
 };
 //End MathAdditionApp
-
 //Start ImageSlider
 var slideIndex = 1;
 showDivs(slideIndex);
