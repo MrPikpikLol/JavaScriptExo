@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=content-width, initial-scale=1" />
     <title>Mon Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -26,8 +26,8 @@
   <div class="row">
     <div class="todo col-md-6">
     <div id="wrapper">
-      <h1> Choses à faire</h1>
-      <input id="task" /><button id="add">Ajouter</button>
+      <h1> Choses à faire...</h1>
+      <input class="todobox" id="task" /><button class="todobtn" id="add">Ajouter</button>
       <!-- <hr> -->
       <div id="todos"></div>
     </div>
@@ -67,35 +67,35 @@
   <div class="row">
     <div class=" wordcount col-md-6">
     <h1> Ecris quelque chose... </h1>
-    <input id="str" value="" type="text" />
+    <input class="wordbox" id="str" value="" />
     <div id="output"></div>
     <button id="btn"><h2>Combien de lettres?</h2></button>
     </div>
 <!-- End WordCountTool -->
 <!---------------------------------------->
 <!-- Start MathAdditionApp -->
-    <div class="col-md-6">
+    <div class="mathadd col-md-6">
     <div id="wrapper">
       <h1>Combien font?</h1>
       <table align="center">
         <tr>
           <td>
-            <div id="number1">1</div>
+            <div id="number1" style="font-size:25px;">1</div>
           </td>
           <td>
-            <div>+</div>
+            <div style="font-size:25px">+</div>
           </td>
           <td>
-            <div id="number2">2</div>
+            <div id="number2" style="font-size:25px">2</div>
           </td>
           <td>
-            <div>=</div>
+            <div style="font-size:25px">=</div>
           </td>
           <td>
-            <input type="text"></input>
+            <input class="mathbox" type="text"></input>
           </td>
           <td>
-            <input id="btns" type="button" value="check"></input>
+            <input class="mathbtn" id="btns" type="button" value="check"></input>
           </td>
         </tr>
       </table>
@@ -107,7 +107,7 @@
 <!---------------------------------------->
 <!-- Start ImageSlider -->
 <div class="container">
-  <div class="row">
+  <div class="imgslider row">
     <h1 class="wrapper"> Mes Photos</h1>
     </br>
     </br>
@@ -147,8 +147,8 @@
 <!-- End ContactForm -->
 <!---------------------------------------->
 <!-- Start Script -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 <!-- End Script -->
   </body>

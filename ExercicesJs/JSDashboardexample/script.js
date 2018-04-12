@@ -103,9 +103,9 @@ var answer = number1 + number2;
 
 var checkAnswer = document.querySelector("input[type=text]");
 var value = checkAnswer.value;
-var btn = document.querySelector("input[type=button][value=check]");
+var btns = document.querySelector("input[type=button][value=check]");
 
-btn.onclick = function () {
+btns.onclick = function () {
   value = checkAnswer.value;
   if (value == answer) {
     alert("you are correct");
@@ -124,6 +124,7 @@ btn.onclick = function () {
   answer = number1 + number2
 };
 //End MathAdditionApp
+
 //Start ImageSlider
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -143,6 +144,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 //End ImageSlider
+
 //Start Contactform
 $(document).ready(function(){
   function init() {
