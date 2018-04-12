@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=content-width, initial-scale=1" />
     <title>Mon Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/fa-svg-with-js.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -69,7 +70,7 @@
     <h1> Ecris quelque chose... </h1>
     <input class="wordbox" id="str" value="" />
     <div id="output"></div>
-    <button id="btn"><h2>Combien de lettres?</h2></button>
+    <button class="wordbtn" id="btn">Combien de lettres?</button>
     </div>
 <!-- End WordCountTool -->
 <!---------------------------------------->
@@ -131,24 +132,60 @@
   <div class="contact row">
     <form id="cf" method="post" action="" >
       <h1>Contactez moi</h1>
-      <fieldset>
+      <!--<fieldset>
+        <div class="col-md-2">
         <label for="name">Nom</label>
-        <input type="text" id="name" name="name" class= "stored" />
         <label for="mail">Email</label>
-        <input type="email" id="email" name="email" class= "stored" />
         <label for="message">Message</label>
+        </div>
+        <div class="col-md-10">
+        <input type="text" id="name" name="name" class= "stored" />
+        <input type="email" id="email" name="email" class= "stored" />
         <textarea id="message" name="message" class= "stored"></textarea>
-      </fieldset>
-      <button type="submit">Envoyer</button>
-      <input id ="clear" type="reset" />
+        </div>
+      </fieldset>-->
+      <div class="form">
+          <div class="row">
+              <div class="contactL col-md-4">
+                  <input type="text" id="name" name="name" class= "stored" placeholder="Nom"/>
+                  <input type="email" id="email" name="email" class= "stored" placeholder="Email" />
+              </div>
+                  <div class="contactR col-md-8">
+                  <textarea id="message" name="message" class= "stored" placeholder="Votre Message"></textarea>
+                  </div>
+          </div>
+      </div>
+      <button class="contactbtn" type="submit">Envoyer</button>
+      <input class="contactbtn" id ="clear" type="reset" />
     </form>
   </div>
 </div>
 <!-- End ContactForm -->
 <!---------------------------------------->
+<!-- Start Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <p>Réalisé par Picard Damien</p>
+                    <p>Copyright &copy; 2018 <a href = "#"></a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="socialicon">
+                <a href="https://github.com/MrPikpikLol/JavaScriptExo"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/mr_pikpik"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
 <!-- Start Script -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.min.js"></script>
     <script src="script.js"></script>
 <!-- End Script -->
   </body>
