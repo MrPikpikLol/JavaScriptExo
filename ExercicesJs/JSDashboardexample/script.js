@@ -63,7 +63,7 @@ function show() {
 
   var html = '<ul>'
   for(var i=0; i<todos.length; i++) {
-    html += '<li class="todoli">' + todos[i] + '<button class="remove" id="' + i + '">Delete</button> </li>';
+    html += '<li class="todoli">' + todos[i] + '<button class="remove" id="' + i + '">Effacer</button> </li>';
   };
   html += '</ul>';
 
@@ -82,7 +82,7 @@ show();
 //Start WordCountTool
 var print = function(msg) {
 
-  document.getElementById("output").innerHTML = "Length is " + msg;
+  document.getElementById("output").innerHTML = "Tu as écris " + msg + " lettres";
 
 }
 
@@ -108,9 +108,9 @@ var btns = document.querySelector("input[type=button][value=check]");
 btns.onclick = function () {
   value = checkAnswer.value;
   if (value == answer) {
-    alert("you are correct");
+    alert("Bravo");
   } else {
-    alert("you are not correct, the answer was " + answer);
+    alert("Retourne à l'école, la réponse est " + answer);
   }
 
   document.querySelector("input[type=text]").value = "";
@@ -141,7 +141,7 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
-}
+};
 //End ImageSlider
 
 //Start Contactform
@@ -161,5 +161,5 @@ $(document).ready(function(){
 });
 $('.stored').change(function(){
   localStorage[$(this).attr('name')] = $(this).val();
-})
+});
 //End ContactForm

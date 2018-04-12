@@ -29,10 +29,10 @@ $(document).ready(function(){
 });
 function show(data){
 
-  return "<h3>Ville: "+ data.name +"<h3>" +         
+  return "<h3>Ville: "+ data.name +"<h3>" +
          "<h3>Temps: "+ data.weather[0].description +"<h3>" +
          "<h3>Température: "+ data.main.temp +"°<h3>" +
          "<h3>Humidité: "+ data.main.humidity +"%<h3>" +
          "<h3>Température min: "+ data.main.temp_min +"°<h3>" +
          "<h3>Température max: "+ data.main.temp_max +"°<h3>" ;
-}
+};
